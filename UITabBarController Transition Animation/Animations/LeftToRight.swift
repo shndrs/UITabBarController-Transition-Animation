@@ -29,7 +29,7 @@ extension LeftToRight: UIViewControllerAnimatedTransitioning {
             options.duration = 0.3
             options.transitionContext = transitionContext
         }
-        SwiftyAnimator.animationWith(object: object)
+        SwiftyAnimator.transition(with: object)
     }
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {

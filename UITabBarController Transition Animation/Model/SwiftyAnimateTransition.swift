@@ -21,3 +21,15 @@ public class SwiftyAnimateTransition {
         closure(self)
     }
 }
+
+public class SwiftyAnimateDestinationTransition {
+    public var transitionContext: UIViewControllerContextTransitioning!
+    public var destinationTransform: CGAffineTransform!
+    public var duration: TimeInterval!
+    
+    public typealias Closure = (SwiftyAnimateDestinationTransition) -> Void
+    
+    init(closure:Closure) {
+        closure(self)
+    }
+}
