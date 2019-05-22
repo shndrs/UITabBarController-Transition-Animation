@@ -9,21 +9,21 @@
 import Foundation
 
 public enum SHNDTabBarAnimation {
-    case scaleX
-    case scaleY
-    case scaleXY
-    case rightToLeft
+//    case scaleX
+//    case scaleY
+//    case scaleXY
+//    case rightToLeft
     case leftToRight
-    case upToDown
-    case downToUp
-    case fade
+//    case upToDown
+//    case downToUp
+//    case fade
 }
 
 @requires_stored_property_inits
-public class SHNDTabBarTransitionModel {
+public class SwiftyTabBarTransitionOptions {
     
-    public var duration:TimeInterval = 0.25
-    public var animationOption:SHNDTabBarAnimation = .fade
+    public private(set) var duration:TimeInterval = 0.25
+    public private(set) var animationOption:SHNDTabBarAnimation = .leftToRight
     
     public required init() {}
     

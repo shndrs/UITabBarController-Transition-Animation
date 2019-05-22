@@ -14,7 +14,7 @@ class MainTBC: UITabBarController {
         super.viewDidLoad()
 
         delegate = self
-        
+        self.view.backgroundColor = .lightGray
     }
 }
 
@@ -23,44 +23,8 @@ class MainTBC: UITabBarController {
 extension MainTBC: UITabBarControllerDelegate {
 
     func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SHNDTabBarTransitioning()
-    }
-}
-
-final class SHNDTabBarTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
-    
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
-        guard let origin = transitionContext.view(forKey: .from) else { return }
-        guard let destination = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
-        
-        origin.alpha = 1
-        origin.transform = .identity
-        
-        destination.alpha = 0.0
-        destination.transform = CGAffineTransform(rotationAngle: .pi / 4)
-        
-        transitionContext.containerView.addSubview(origin)
-        transitionContext.containerView.addSubview(destination)
-        
-        
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: .curveEaseOut, animations: {
-            
-            origin.alpha = 0
-            origin.transform = CGAffineTransform(translationX: +100, y: 0)
-            
-            destination.alpha = 1.0
-            destination.transform = .identity
-            
-        }) { (success) in
-            origin.transform = .identity
-            origin.alpha = 1
-            transitionContext.completeTransition(success)
-        }
-    }
-    
-    
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.25
+        let transition = SwiftyTabBarTransitionOptions(duration: 0.3, animationOption: .leftToRight)
+        return SwiftyTabBarTransition.set(transition: transition)
     }
 }

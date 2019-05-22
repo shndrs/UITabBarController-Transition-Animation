@@ -13,7 +13,9 @@
 		F4DADE852295177700832103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DADE842295177700832103 /* Assets.xcassets */; };
 		F4DADE882295177700832103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DADE862295177700832103 /* LaunchScreen.storyboard */; };
 		F4DADE90229517F800832103 /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE8F229517F800832103 /* MainTBC.swift */; };
-		F4DADE92229533D900832103 /* SHNDTabBarTransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE91229533D900832103 /* SHNDTabBarTransitionModel.swift */; };
+		F4DADE92229533D900832103 /* SwiftyTabBarTransitionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE91229533D900832103 /* SwiftyTabBarTransitionOptions.swift */; };
+		F4DADE96229549D100832103 /* LeftToRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE95229549D100832103 /* LeftToRight.swift */; };
+		F4DADE9A22954BB400832103 /* SwiftyTabBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE9922954BB400832103 /* SwiftyTabBarTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		F4DADE872295177700832103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4DADE892295177700832103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DADE8F229517F800832103 /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
-		F4DADE91229533D900832103 /* SHNDTabBarTransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHNDTabBarTransitionModel.swift; sourceTree = "<group>"; };
+		F4DADE91229533D900832103 /* SwiftyTabBarTransitionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTabBarTransitionOptions.swift; sourceTree = "<group>"; };
+		F4DADE95229549D100832103 /* LeftToRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftToRight.swift; sourceTree = "<group>"; };
+		F4DADE9922954BB400832103 /* SwiftyTabBarTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTabBarTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		F4DADE7C2295177500832103 /* UITabBarController Transition Animation */ = {
 			isa = PBXGroup;
 			children = (
+				F4DADE9B22954C0B00832103 /* Model */,
+				F4DADE9822954BA100832103 /* Factory */,
 				F4DADE93229536BB00832103 /* Animations */,
 				F4DADE7D2295177500832103 /* AppDelegate.swift */,
 				F4DADE7F2295177500832103 /* ViewController.swift */,
@@ -66,7 +72,6 @@
 				F4DADE842295177700832103 /* Assets.xcassets */,
 				F4DADE862295177700832103 /* LaunchScreen.storyboard */,
 				F4DADE892295177700832103 /* Info.plist */,
-				F4DADE91229533D900832103 /* SHNDTabBarTransitionModel.swift */,
 			);
 			path = "UITabBarController Transition Animation";
 			sourceTree = "<group>";
@@ -74,8 +79,25 @@
 		F4DADE93229536BB00832103 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F4DADE95229549D100832103 /* LeftToRight.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		F4DADE9822954BA100832103 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F4DADE9922954BB400832103 /* SwiftyTabBarTransition.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		F4DADE9B22954C0B00832103 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4DADE91229533D900832103 /* SwiftyTabBarTransitionOptions.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DADE96229549D100832103 /* LeftToRight.swift in Sources */,
 				F4DADE802295177500832103 /* ViewController.swift in Sources */,
+				F4DADE9A22954BB400832103 /* SwiftyTabBarTransition.swift in Sources */,
 				F4DADE7E2295177500832103 /* AppDelegate.swift in Sources */,
 				F4DADE90229517F800832103 /* MainTBC.swift in Sources */,
-				F4DADE92229533D900832103 /* SHNDTabBarTransitionModel.swift in Sources */,
+				F4DADE92229533D900832103 /* SwiftyTabBarTransitionOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
