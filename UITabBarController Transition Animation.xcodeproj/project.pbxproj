@@ -58,11 +58,11 @@
 			children = (
 				F4DADE7D2295177500832103 /* AppDelegate.swift */,
 				F4DADE7F2295177500832103 /* ViewController.swift */,
+				F4DADE8F229517F800832103 /* MainTBC.swift */,
 				F4DADE812295177500832103 /* Main.storyboard */,
 				F4DADE842295177700832103 /* Assets.xcassets */,
 				F4DADE862295177700832103 /* LaunchScreen.storyboard */,
 				F4DADE892295177700832103 /* Info.plist */,
-				F4DADE8F229517F800832103 /* MainTBC.swift */,
 			);
 			path = "UITabBarController Transition Animation";
 			sourceTree = "<group>";
