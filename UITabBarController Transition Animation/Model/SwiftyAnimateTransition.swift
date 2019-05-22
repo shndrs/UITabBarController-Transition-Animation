@@ -33,3 +33,14 @@ public class SwiftyAnimateDestinationTransition {
         closure(self)
     }
 }
+
+public class SwiftyAnimateFadeTransition {
+    public var transitionContext: UIViewControllerContextTransitioning!
+    public var duration: TimeInterval!
+    
+    public typealias Closure = (SwiftyAnimateFadeTransition) -> Void
+    
+    init(closure:Closure) {
+        closure(self)
+    }
+}

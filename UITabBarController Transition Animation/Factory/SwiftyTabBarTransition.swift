@@ -20,6 +20,8 @@ public struct SwiftyTabBarTransition {
             return LeftToRight(transition: transition)
         case .rightToLeft:
             return RightToLeft(transition: transition)
+        case .fade:
+            return Fade(transition: transition)
         }
     }
 }

@@ -8,16 +8,27 @@
 
 import UIKit
 
-public protocol SwiftyAnimation {
-    static func transition(with object:SwiftyAnimateTransition) -> Void
-    static func transitionDestination(with object:SwiftyAnimateTransition) -> Void
-}
-
-public struct SwiftyAnimator: SwiftyAnimation {
+public struct SwiftyAnimator {
     
     private init() {}
     
-    public static func transitionDestination(with object: SwiftyAnimateTransition) {
+    public static func transitionFade(with object: SwiftyAnimateFadeTransition) {
+        
+        guard let destination = object.transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
+        
+        destination.alpha = 0.0
+        
+        object.transitionContext.containerView.addSubview(destination)
+        
+        UIView.animate(withDuration: object.duration, delay: 0, options: .curveEaseOut, animations: {
+            
+            destination.alpha = 1.0
+        }) { (success) in
+            object.transitionContext.completeTransition(success)
+        }
+    }
+    
+    public static func transitionDestination(with object: SwiftyAnimateDestinationTransition) {
         
         guard let destination = object.transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
         
@@ -63,5 +74,5 @@ public struct SwiftyAnimator: SwiftyAnimation {
             origin.alpha = 1
             object.transitionContext.completeTransition(success)
         }
-    } 
+    }
 }
