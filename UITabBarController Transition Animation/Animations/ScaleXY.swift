@@ -1,0 +1,35 @@
+//
+//  ScaleXY.swift
+//  UITabBarController Transition Animation
+//
+//  Created by NP2 on 5/22/19.
+//  Copyright © 2019 shndrs. All rights reserved.
+//
+
+import UIKit
+
+final public class ScaleXY: NSObject {
+    private var transition:SwiftyTabBarTransitionOptions!
+    
+    public init(transition:SwiftyTabBarTransitionOptions) {
+        self.transition = transition
+    }
+}
+
+// MARK: UIViewControllerAnimatedTransitioning Impelementation
+
+extension ScaleXY: UIViewControllerAnimatedTransitioning {
+    
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        let object = SwiftyAnimateDestinationTransition { (options) in
+            options.destinationTransform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            options.duration = transitionDuration(using: transitionContext)
+            options.transitionContext = transitionContext
+        }
+        SwiftyAnimator.transitionDestination(with: object)
+    }
+    
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        return transition.duration
+    }
+}
