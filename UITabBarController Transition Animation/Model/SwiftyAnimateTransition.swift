@@ -8,15 +8,16 @@
 
 import UIKit
 
-struct SwiftyAnimateTransition {
+public class SwiftyAnimateTransition {
     
-    public let transitionContext: UIViewControllerContextTransitioning
-    public let originTransform: CGAffineTransform
-    public let destinationTransform: CGAffineTransform
+    public var transitionContext: UIViewControllerContextTransitioning!
+    public var originTransform: CGAffineTransform!
+    public var destinationTransform: CGAffineTransform!
+    public var duration: TimeInterval!
     
-    init(transitionContext: UIViewControllerContextTransitioning, originTransform:CGAffineTransform, destinationTransform:CGAffineTransform) {
-        self.transitionContext = transitionContext
-        self.originTransform = originTransform
-        self.destinationTransform = destinationTransform
+    public typealias Closure = (SwiftyAnimateTransition) -> Void
+    
+    init(closure:Closure) {
+        closure(self)
     }
 }

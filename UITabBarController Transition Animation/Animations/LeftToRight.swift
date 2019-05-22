@@ -21,38 +21,24 @@ final public class LeftToRight: NSObject {
 
 extension LeftToRight: UIViewControllerAnimatedTransitioning {
     
-    struct SwiftyAnimateTransition {
+    func animationWith(object:SwiftyAnimateTransition) {
         
-        public let transitionContext: UIViewControllerContextTransitioning
-        public let originTransform: CGAffineTransform
-        public let destinationTransform: CGAffineTransform
-        
-        init(transitionContext: UIViewControllerContextTransitioning, originTransform:CGAffineTransform, destinationTransform:CGAffineTransform) {
-            self.transitionContext = transitionContext
-            self.originTransform = originTransform
-            self.destinationTransform = destinationTransform
-        }
-    }
-    
-    
-    func animationWith(transitionContext: UIViewControllerContextTransitioning, originTransform:CGAffineTransform, destinationTransform:CGAffineTransform) {
-        
-        guard let origin = transitionContext.view(forKey: .from) else { return }
-        guard let destination = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
+        guard let origin = object.transitionContext.view(forKey: .from) else { return }
+        guard let destination = object.transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
         
         origin.alpha = 1
         origin.transform = .identity
         
         destination.alpha = 0.0
-        destination.transform = destinationTransform
+        destination.transform = object.destinationTransform
         
-        transitionContext.containerView.addSubview(origin)
-        transitionContext.containerView.addSubview(destination)
+        object.transitionContext.containerView.addSubview(origin)
+        object.transitionContext.containerView.addSubview(destination)
         
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: transitionDuration(using: object.transitionContext), delay: 0, options: .curveEaseOut, animations: {
             
-            origin.transform = originTransform
+            origin.transform = object.originTransform
             
             destination.alpha = 1.0
             destination.transform = .identity
@@ -60,10 +46,9 @@ extension LeftToRight: UIViewControllerAnimatedTransitioning {
         }) { (success) in
             origin.transform = .identity
             origin.alpha = 1
-            transitionContext.completeTransition(success)
+            object.transitionContext.completeTransition(success)
         }
     }
-    
     
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         

@@ -17,6 +17,7 @@
 		F4DADE96229549D100832103 /* LeftToRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE95229549D100832103 /* LeftToRight.swift */; };
 		F4DADE9A22954BB400832103 /* SwiftyTabBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE9922954BB400832103 /* SwiftyTabBarTransition.swift */; };
 		F4DADE9D2295500C00832103 /* SwiftyAnimateTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE9C2295500C00832103 /* SwiftyAnimateTransition.swift */; };
+		F4DADEA0229550FC00832103 /* SwiftyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE9F229550FC00832103 /* SwiftyAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F4DADE95229549D100832103 /* LeftToRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftToRight.swift; sourceTree = "<group>"; };
 		F4DADE9922954BB400832103 /* SwiftyTabBarTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTabBarTransition.swift; sourceTree = "<group>"; };
 		F4DADE9C2295500C00832103 /* SwiftyAnimateTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAnimateTransition.swift; sourceTree = "<group>"; };
+		F4DADE9F229550FC00832103 /* SwiftyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		F4DADE7C2295177500832103 /* UITabBarController Transition Animation */ = {
 			isa = PBXGroup;
 			children = (
+				F4DADE9E229550E500832103 /* Interface */,
 				F4DADE9B22954C0B00832103 /* Model */,
 				F4DADE9822954BA100832103 /* Factory */,
 				F4DADE93229536BB00832103 /* Animations */,
@@ -101,6 +104,14 @@
 				F4DADE9C2295500C00832103 /* SwiftyAnimateTransition.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F4DADE9E229550E500832103 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F4DADE9F229550FC00832103 /* SwiftyAnimation.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				F4DADE7E2295177500832103 /* AppDelegate.swift in Sources */,
 				F4DADE9D2295500C00832103 /* SwiftyAnimateTransition.swift in Sources */,
 				F4DADE90229517F800832103 /* MainTBC.swift in Sources */,
+				F4DADEA0229550FC00832103 /* SwiftyAnimation.swift in Sources */,
 				F4DADE92229533D900832103 /* SwiftyTabBarTransitionOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
