@@ -16,6 +16,7 @@
 		F4DADE92229533D900832103 /* SwiftyTabBarTransitionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE91229533D900832103 /* SwiftyTabBarTransitionOptions.swift */; };
 		F4DADE96229549D100832103 /* LeftToRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE95229549D100832103 /* LeftToRight.swift */; };
 		F4DADE9A22954BB400832103 /* SwiftyTabBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE9922954BB400832103 /* SwiftyTabBarTransition.swift */; };
+		F4DADE9D2295500C00832103 /* SwiftyAnimateTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE9C2295500C00832103 /* SwiftyAnimateTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F4DADE91229533D900832103 /* SwiftyTabBarTransitionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTabBarTransitionOptions.swift; sourceTree = "<group>"; };
 		F4DADE95229549D100832103 /* LeftToRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftToRight.swift; sourceTree = "<group>"; };
 		F4DADE9922954BB400832103 /* SwiftyTabBarTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTabBarTransition.swift; sourceTree = "<group>"; };
+		F4DADE9C2295500C00832103 /* SwiftyAnimateTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAnimateTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F4DADE91229533D900832103 /* SwiftyTabBarTransitionOptions.swift */,
+				F4DADE9C2295500C00832103 /* SwiftyAnimateTransition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				F4DADE802295177500832103 /* ViewController.swift in Sources */,
 				F4DADE9A22954BB400832103 /* SwiftyTabBarTransition.swift in Sources */,
 				F4DADE7E2295177500832103 /* AppDelegate.swift in Sources */,
+				F4DADE9D2295500C00832103 /* SwiftyAnimateTransition.swift in Sources */,
 				F4DADE90229517F800832103 /* MainTBC.swift in Sources */,
 				F4DADE92229533D900832103 /* SwiftyTabBarTransitionOptions.swift in Sources */,
 			);

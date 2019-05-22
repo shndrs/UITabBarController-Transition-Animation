@@ -21,9 +21,21 @@ final public class LeftToRight: NSObject {
 
 extension LeftToRight: UIViewControllerAnimatedTransitioning {
     
+    struct SwiftyAnimateTransition {
+        
+        public let transitionContext: UIViewControllerContextTransitioning
+        public let originTransform: CGAffineTransform
+        public let destinationTransform: CGAffineTransform
+        
+        init(transitionContext: UIViewControllerContextTransitioning, originTransform:CGAffineTransform, destinationTransform:CGAffineTransform) {
+            self.transitionContext = transitionContext
+            self.originTransform = originTransform
+            self.destinationTransform = destinationTransform
+        }
+    }
     
     
-    func akbar(transitionContext: UIViewControllerContextTransitioning, originTransform:CGAffineTransform, destinationTransform:CGAffineTransform) {
+    func animationWith(transitionContext: UIViewControllerContextTransitioning, originTransform:CGAffineTransform, destinationTransform:CGAffineTransform) {
         
         guard let origin = transitionContext.view(forKey: .from) else { return }
         guard let destination = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
