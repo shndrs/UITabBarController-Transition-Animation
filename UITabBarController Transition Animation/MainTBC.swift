@@ -14,7 +14,6 @@ class MainTBC: UITabBarController {
         super.viewDidLoad()
 
         delegate = self
-        self.view.backgroundColor = .lightGray
     }
 }
 

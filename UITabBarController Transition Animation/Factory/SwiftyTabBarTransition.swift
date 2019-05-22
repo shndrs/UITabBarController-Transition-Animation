@@ -10,7 +10,7 @@ import UIKit
 
 public struct SwiftyTabBarTransition {
     
-    ///A Factory method That returns a HSProgressProtocol to access show() and dismiss() functions
+    ///A Factory method That returns a UIViewControllerAnimatedTransitioning
     
     public static func set(transition:SwiftyTabBarTransitionOptions) -> UIViewControllerAnimatedTransitioning {
         
@@ -18,6 +18,8 @@ public struct SwiftyTabBarTransition {
         
         case .leftToRight:
             return LeftToRight(transition: transition)
+        case .rightToLeft:
+            return RightToLeft(transition: transition)
         }
     }
 }

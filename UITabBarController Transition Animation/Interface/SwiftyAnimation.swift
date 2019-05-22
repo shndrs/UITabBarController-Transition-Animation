@@ -9,12 +9,14 @@
 import UIKit
 
 public protocol SwiftyAnimation {
-    func animationWith(object:SwiftyAnimateTransition) -> Void
+    static func animationWith(object:SwiftyAnimateTransition) -> Void
 }
 
 public struct SwiftyAnimator: SwiftyAnimation {
     
-    public func animationWith(object: SwiftyAnimateTransition) {
+    private init() {}
+    
+    public static func animationWith(object: SwiftyAnimateTransition) {
         
         guard let origin = object.transitionContext.view(forKey: .from) else { return }
         guard let destination = object.transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
