@@ -29,17 +29,6 @@ extension MainTBC: UITabBarControllerDelegate {
 
 final class SHNDTabBarTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
     
-    fileprivate enum SHNDTabBarAnimation {
-        case scaleX
-        case scaleY
-        case scaleXY
-        case rightToLeft
-        case leftToRight
-        case upToDown
-        case downToUp
-        case fade
-    }
-
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         guard let origin = transitionContext.view(forKey: .from) else { return }
@@ -59,7 +48,6 @@ final class SHNDTabBarTransitioning: NSObject, UIViewControllerAnimatedTransitio
             
             origin.alpha = 0
             origin.transform = CGAffineTransform(translationX: +100, y: 0)
-                //CGAffineTransform(scaleX: 1.5, y: 1.5)
             
             destination.alpha = 1.0
             destination.transform = .identity
