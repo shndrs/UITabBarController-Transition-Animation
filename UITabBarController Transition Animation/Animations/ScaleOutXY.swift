@@ -1,5 +1,5 @@
 //
-//  ScaleInXY.swift
+//  ScaleOutXY.swift
 //  UITabBarController Transition Animation
 //
 //  Created by NP2 on 5/22/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final public class ScaleInXY: NSObject {
+final public class ScaleOutXY: NSObject {
     private var transition:SwiftyTabBarTransitionOptions!
     
     public init(transition:SwiftyTabBarTransitionOptions) {
@@ -18,11 +18,11 @@ final public class ScaleInXY: NSObject {
 
 // MARK: UIViewControllerAnimatedTransitioning Impelementation
 
-extension ScaleInXY: UIViewControllerAnimatedTransitioning {
+extension ScaleOutXY: UIViewControllerAnimatedTransitioning {
     
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let object = SwiftyAnimateDestinationTransition { (options) in
-            options.destinationTransform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            options.destinationTransform = CGAffineTransform(scaleX: 1.2, y: 1.2)
             options.duration = transitionDuration(using: transitionContext)
             options.transitionContext = transitionContext
         }

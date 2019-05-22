@@ -11,7 +11,8 @@ import Foundation
 public enum SHNDTabBarAnimation {
     case scaleX
     case scaleY
-    case scaleXY
+    case scaleInXY
+    case scaleOutXY
     case rightToLeft
     case leftToRight
 //    case upToDown

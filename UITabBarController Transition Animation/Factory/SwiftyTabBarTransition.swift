@@ -26,8 +26,10 @@ public struct SwiftyTabBarTransition {
             return ScaleX(transition: transition)
         case .scaleY:
             return ScaleY(transition: transition)
-        case .scaleXY:
-            return ScaleXY(transition: transition)
+        case .scaleInXY:
+            return ScaleInXY(transition: transition)
+        case .scaleOutXY:
+            return ScaleOutXY(transition: transition)
         }
     }
 }
