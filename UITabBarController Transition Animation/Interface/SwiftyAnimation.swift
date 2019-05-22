@@ -53,7 +53,6 @@ public struct SwiftyAnimator {
         guard let destination = object.transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
         
         origin.transform = .identity
-        
         destination.transform = object.destinationTransform
         
         object.transitionContext.containerView.addSubview(origin)
@@ -62,8 +61,6 @@ public struct SwiftyAnimator {
         UIView.animate(withDuration: object.duration, delay: 0, options: .curveEaseInOut, animations: {
             
             origin.transform = object.originTransform
-            
-            destination.alpha = 1.0
             destination.transform = .identity
             
         }) { (success) in
