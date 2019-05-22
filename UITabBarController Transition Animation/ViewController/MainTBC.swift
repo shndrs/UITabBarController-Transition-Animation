@@ -23,7 +23,7 @@ extension MainTBC: UITabBarControllerDelegate {
 
     func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        let transition = SwiftyTabBarTransitionOptions(duration: 0.3, animationOption: .fade)
+        let transition = SwiftyTabBarTransitionOptions(duration: 0.3, animationOption: .scaleX)
         return SwiftyTabBarTransition.set(transition: transition)
     }
 }
