@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class Fade: NSObject {
+final public class Fade: NSObject {
     private var transition:SwiftyTabBarTransitionOptions!
     
     public init(transition:SwiftyTabBarTransitionOptions) {
@@ -20,15 +20,15 @@ final class Fade: NSObject {
 
 extension Fade: UIViewControllerAnimatedTransitioning {
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let object = SwiftyAnimateFadeTransition { (options) in
-            options.duration = 0.3
+            options.duration = transitionDuration(using: transitionContext)
             options.transitionContext = transitionContext
         }
         SwiftyAnimator.transitionFade(with: object)
     }
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return transition.duration
     }
 }

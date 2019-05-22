@@ -1,5 +1,5 @@
 //
-//  RightToLeft.swift
+//  ScaleY.swift
 //  UITabBarController Transition Animation
 //
 //  Created by NP2 on 5/22/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final public class RightToLeft: NSObject {
+final public class ScaleY: NSObject {
     private var transition:SwiftyTabBarTransitionOptions!
     
     public init(transition:SwiftyTabBarTransitionOptions) {
@@ -18,19 +18,18 @@ final public class RightToLeft: NSObject {
 
 // MARK: UIViewControllerAnimatedTransitioning Impelementation
 
-extension RightToLeft: UIViewControllerAnimatedTransitioning {
+extension ScaleY: UIViewControllerAnimatedTransitioning {
+    
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        
-        let object = SwiftyAnimateTransition { (options) in
-            options.destinationTransform = CGAffineTransform(translationX: +UIScreen.main.bounds.width, y: 0)
-            options.originTransform = CGAffineTransform(translationX: -UIScreen.main.bounds.width, y: 0)
+        let object = SwiftyAnimateDestinationTransition { (options) in
+            options.destinationTransform = CGAffineTransform(scaleX: 1, y: 1.4)
             options.duration = transitionDuration(using: transitionContext)
             options.transitionContext = transitionContext
         }
-        SwiftyAnimator.transition(with: object)
+        SwiftyAnimator.transitionDestination(with: object)
     }
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return self.transition.duration
+        return transition.duration
     }
 }

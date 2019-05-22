@@ -26,7 +26,7 @@ extension LeftToRight: UIViewControllerAnimatedTransitioning {
         let object = SwiftyAnimateTransition { (options) in
             options.destinationTransform = CGAffineTransform(translationX: -UIScreen.main.bounds.width, y: 0)
             options.originTransform = CGAffineTransform(translationX: +UIScreen.main.bounds.width, y: 0)
-            options.duration = 0.3
+            options.duration = transitionDuration(using: transitionContext)
             options.transitionContext = transitionContext
         }
         SwiftyAnimator.transition(with: object)

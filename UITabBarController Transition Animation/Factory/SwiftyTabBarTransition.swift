@@ -24,6 +24,8 @@ public struct SwiftyTabBarTransition {
             return Fade(transition: transition)
         case .scaleX:
             return ScaleX(transition: transition)
+        case .scaleY:
+            return ScaleY(transition: transition)
         }
     }
 }

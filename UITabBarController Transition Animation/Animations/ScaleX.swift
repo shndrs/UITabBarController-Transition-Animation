@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ScaleX: NSObject {
+final public class ScaleX: NSObject {
     private var transition:SwiftyTabBarTransitionOptions!
     
     public init(transition:SwiftyTabBarTransitionOptions) {
@@ -20,7 +20,7 @@ final class ScaleX: NSObject {
 
 extension ScaleX: UIViewControllerAnimatedTransitioning {
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let object = SwiftyAnimateDestinationTransition { (options) in
             options.destinationTransform = CGAffineTransform(scaleX: 1.4, y: 1.0)
             options.duration = transitionDuration(using: transitionContext)
@@ -29,7 +29,7 @@ extension ScaleX: UIViewControllerAnimatedTransitioning {
         SwiftyAnimator.transitionDestination(with: object)
     }
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return transition.duration
     }
 }
