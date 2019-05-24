@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class TopToBottom: NSObject {
+final public class TopToBottom: NSObject {
     
     private var transition:SwiftyTabBarTransitionOptions!
     

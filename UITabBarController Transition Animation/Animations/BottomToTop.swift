@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class BottomToTop: NSObject {
+final public class BottomToTop: NSObject {
     private var transition:SwiftyTabBarTransitionOptions!
     
     public init(transition:SwiftyTabBarTransitionOptions) {
@@ -35,4 +35,3 @@ extension BottomToTop: UIViewControllerAnimatedTransitioning {
         return self.transition.duration
     }
 }
-
