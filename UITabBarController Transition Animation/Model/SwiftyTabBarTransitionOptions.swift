@@ -16,7 +16,7 @@ public enum SHNDTabBarAnimation {
     case rightToLeft
     case leftToRight
     case topToBottom
-//    case downToUp
+    case bottomToTop
     case fade
 }
 
