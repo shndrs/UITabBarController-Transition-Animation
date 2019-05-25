@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F7964DC2297BED200ECB56C /* TopToBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7964DB2297BED200ECB56C /* TopToBottom.swift */; };
 		2F7964DE2297CAB500ECB56C /* BottomToTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7964DD2297CAB500ECB56C /* BottomToTop.swift */; };
+		F4241C122298FDC2003B5E07 /* TopLeftToBottomRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4241C112298FDC2003B5E07 /* TopLeftToBottomRight.swift */; };
 		F4DADE7E2295177500832103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE7D2295177500832103 /* AppDelegate.swift */; };
 		F4DADE832295177500832103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DADE812295177500832103 /* Main.storyboard */; };
 		F4DADE852295177700832103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DADE842295177700832103 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		2F7964DB2297BED200ECB56C /* TopToBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopToBottom.swift; sourceTree = "<group>"; };
 		2F7964DD2297CAB500ECB56C /* BottomToTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToTop.swift; sourceTree = "<group>"; };
+		F4241C112298FDC2003B5E07 /* TopLeftToBottomRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftToBottomRight.swift; sourceTree = "<group>"; };
 		F4DADE7A2295177500832103 /* UITabBarController Transition Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITabBarController Transition Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DADE7D2295177500832103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4DADE822295177500832103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				F4DADEB02295648E00832103 /* ScaleOutXY.swift */,
 				2F7964DB2297BED200ECB56C /* TopToBottom.swift */,
 				2F7964DD2297CAB500ECB56C /* BottomToTop.swift */,
+				F4241C112298FDC2003B5E07 /* TopLeftToBottomRight.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				F4DADEA72295597B00832103 /* Fade.swift in Sources */,
 				F4DADE9D2295500C00832103 /* SwiftyAnimateTransition.swift in Sources */,
 				F4DADE90229517F800832103 /* MainTBC.swift in Sources */,
+				F4241C122298FDC2003B5E07 /* TopLeftToBottomRight.swift in Sources */,
 				F4DADEA0229550FC00832103 /* SwiftyAnimation.swift in Sources */,
 				F4DADEAB2295610E00832103 /* ScaleY.swift in Sources */,
 				F4DADE92229533D900832103 /* SwiftyTabBarTransitionOptions.swift in Sources */,
