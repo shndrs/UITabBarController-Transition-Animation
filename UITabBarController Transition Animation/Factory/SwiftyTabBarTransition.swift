@@ -36,6 +36,8 @@ public struct SwiftyTabBarTransition {
             return BottomToTop(transition: transition)
         case .topLeftToBottomRight:
             return TopLeftToBottomRight(transition: transition)
+        case .bottomLeftToTopRight:
+            return BottomLeftToTopRight(transition: transition)
         }
     }
 }

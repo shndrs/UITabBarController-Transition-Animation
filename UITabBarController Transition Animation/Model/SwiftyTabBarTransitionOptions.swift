@@ -19,6 +19,7 @@ public enum SHNDTabBarAnimation {
     case bottomToTop
     case fade
     case topLeftToBottomRight
+    case bottomLeftToTopRight
 }
 
 @requires_stored_property_inits
