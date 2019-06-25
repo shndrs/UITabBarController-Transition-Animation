@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum SHNDTabBarAnimation {
+public enum SwiftyTabBarAnimations {
     case scaleX
     case scaleY
     case scaleInXY
@@ -26,11 +26,11 @@ public enum SHNDTabBarAnimation {
 public class SwiftyTabBarTransitionOptions {
     
     public private(set) var duration:TimeInterval = 0.25
-    public private(set) var animationOption:SHNDTabBarAnimation = .leftToRight
+    public private(set) var animationOption:SwiftyTabBarAnimations = .leftToRight
     
     public required init() {}
     
-    init(duration:TimeInterval, animationOption:SHNDTabBarAnimation) {
+    init(duration:TimeInterval, animationOption:SwiftyTabBarAnimations) {
         self.duration = duration
         self.animationOption = animationOption
     }

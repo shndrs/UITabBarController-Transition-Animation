@@ -11,6 +11,7 @@
 		2F7964DE2297CAB500ECB56C /* BottomToTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7964DD2297CAB500ECB56C /* BottomToTop.swift */; };
 		F4241C122298FDC2003B5E07 /* TopLeftToBottomRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4241C112298FDC2003B5E07 /* TopLeftToBottomRight.swift */; };
 		F4241C142298FFC4003B5E07 /* BottomLeftToTopRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4241C132298FFC4003B5E07 /* BottomLeftToTopRight.swift */; };
+		F4AC656622990BB400253434 /* UITabBarController_Transition_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC656522990BB400253434 /* UITabBarController_Transition_AnimationUITests.swift */; };
 		F4DADE7E2295177500832103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADE7D2295177500832103 /* AppDelegate.swift */; };
 		F4DADE832295177500832103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DADE812295177500832103 /* Main.storyboard */; };
 		F4DADE852295177700832103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DADE842295177700832103 /* Assets.xcassets */; };
@@ -29,11 +30,24 @@
 		F4DADEB12295648E00832103 /* ScaleOutXY.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DADEB02295648E00832103 /* ScaleOutXY.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F4AC656822990BB400253434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DADE722295177500832103 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4DADE792295177500832103;
+			remoteInfo = "UITabBarController Transition Animation";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2F7964DB2297BED200ECB56C /* TopToBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopToBottom.swift; sourceTree = "<group>"; };
 		2F7964DD2297CAB500ECB56C /* BottomToTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToTop.swift; sourceTree = "<group>"; };
 		F4241C112298FDC2003B5E07 /* TopLeftToBottomRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftToBottomRight.swift; sourceTree = "<group>"; };
 		F4241C132298FFC4003B5E07 /* BottomLeftToTopRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLeftToTopRight.swift; sourceTree = "<group>"; };
+		F4AC656322990BB400253434 /* UITabBarController Transition AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITabBarController Transition AnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AC656522990BB400253434 /* UITabBarController_Transition_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController_Transition_AnimationUITests.swift; sourceTree = "<group>"; };
+		F4AC656722990BB400253434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DADE7A2295177500832103 /* UITabBarController Transition Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITabBarController Transition Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DADE7D2295177500832103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4DADE822295177500832103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F4AC656022990BB400253434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4DADE772295177500832103 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,10 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4AC656422990BB400253434 /* UITabBarController Transition AnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4AC656522990BB400253434 /* UITabBarController_Transition_AnimationUITests.swift */,
+				F4AC656722990BB400253434 /* Info.plist */,
+			);
+			path = "UITabBarController Transition AnimationUITests";
+			sourceTree = "<group>";
+		};
 		F4DADE712295177500832103 = {
 			isa = PBXGroup;
 			children = (
 				F4DADE7C2295177500832103 /* UITabBarController Transition Animation */,
+				F4AC656422990BB400253434 /* UITabBarController Transition AnimationUITests */,
 				F4DADE7B2295177500832103 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F4DADE7A2295177500832103 /* UITabBarController Transition Animation.app */,
+				F4AC656322990BB400253434 /* UITabBarController Transition AnimationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +200,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F4AC656222990BB400253434 /* UITabBarController Transition AnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AC656C22990BB400253434 /* Build configuration list for PBXNativeTarget "UITabBarController Transition AnimationUITests" */;
+			buildPhases = (
+				F4AC655F22990BB400253434 /* Sources */,
+				F4AC656022990BB400253434 /* Frameworks */,
+				F4AC656122990BB400253434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4AC656922990BB400253434 /* PBXTargetDependency */,
+			);
+			name = "UITabBarController Transition AnimationUITests";
+			productName = "UITabBarController Transition AnimationUITests";
+			productReference = F4AC656322990BB400253434 /* UITabBarController Transition AnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F4DADE792295177500832103 /* UITabBarController Transition Animation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4DADE8C2295177700832103 /* Build configuration list for PBXNativeTarget "UITabBarController Transition Animation" */;
@@ -195,6 +245,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = shndrs;
 				TargetAttributes = {
+					F4AC656222990BB400253434 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4DADE792295177500832103;
+					};
 					F4DADE792295177500832103 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -214,11 +268,19 @@
 			projectRoot = "";
 			targets = (
 				F4DADE792295177500832103 /* UITabBarController Transition Animation */,
+				F4AC656222990BB400253434 /* UITabBarController Transition AnimationUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F4AC656122990BB400253434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4DADE782295177500832103 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +294,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F4AC655F22990BB400253434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AC656622990BB400253434 /* UITabBarController_Transition_AnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4DADE762295177500832103 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +328,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F4AC656922990BB400253434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4DADE792295177500832103 /* UITabBarController Transition Animation */;
+			targetProxy = F4AC656822990BB400253434 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F4DADE812295177500832103 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -278,6 +356,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F4AC656A22990BB400253434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRGCDU34JU;
+				INFOPLIST_FILE = "UITabBarController Transition AnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shndrs.UITabBarController-Transition-AnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UITabBarController Transition Animation";
+			};
+			name = Debug;
+		};
+		F4AC656B22990BB400253434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRGCDU34JU;
+				INFOPLIST_FILE = "UITabBarController Transition AnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shndrs.UITabBarController-Transition-AnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UITabBarController Transition Animation";
+			};
+			name = Release;
+		};
 		F4DADE8A2295177700832103 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,6 +549,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F4AC656C22990BB400253434 /* Build configuration list for PBXNativeTarget "UITabBarController Transition AnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AC656A22990BB400253434 /* Debug */,
+				F4AC656B22990BB400253434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4DADE752295177500832103 /* Build configuration list for PBXProject "UITabBarController Transition Animation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
